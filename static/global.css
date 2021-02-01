@@ -1,0 +1,122 @@
+@import "fonts.css";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+:root {
+  --main_gradient: linear-gradient(90deg, #3e2f90 0%, #4e4376 100%);
+  --purple_gradient: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
+  --light_gradient: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
+  --dark_gradient: linear-gradient(90deg, #41295a 0%, #2f0743 100%);
+
+  --main_color: #3e2f90;
+  --dark_color: #24282a;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
