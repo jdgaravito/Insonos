@@ -89,10 +89,10 @@ video {
   vertical-align: baseline;
 }
 :root {
-  --main_gradient: linear-gradient(90deg, #3e2f90 0%, #4e4376 100%);
+  --main_gradient: linear-gradient(90deg, #3e2f90 0%, #2f256b 100%);
   --purple_gradient: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
   --light_gradient: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
-  --dark_gradient: linear-gradient(90deg, #41295a 0%, #2f0743 100%);
+  --dark_gradient: linear-gradient(90deg, #41295a 0%, #3e2f90 100%);
 
   --main_color: #3e2f90;
   --dark_color: #24282a;

@@ -30,6 +30,9 @@
 </script>
 
 <style>
+  .wrapper{
+    background: var(--main_color);
+  }
   .slide-content {
     padding-bottom: 1.25rem;
     display: block;
@@ -37,9 +40,7 @@
     margin-right: auto;
     width: 50%;
   }
-  .wrapper {
-    background: var(--main_color);
-  }
+
  .logos {
    padding-top: 30px;
    padding-bottom: 20px;

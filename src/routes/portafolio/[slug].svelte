@@ -88,10 +88,9 @@
     display: flex;
     justify-content: center;
   }
-  .buttons {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15rem;
+  .buttons-container {
+    display: block;
+    padding: 10rem;
   }
   .category {
     text-align: center;
@@ -151,6 +150,14 @@
 
   .specs {
     color: #ffffff;
+    background-color: #3e2f90;
+    opacity: 1;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #3e2f90 16px
+      ),
+      repeating-linear-gradient(#484b8355, #484b83);
   }
   .titlecont {
     max-width: 18.75rem;
@@ -213,11 +220,7 @@
         <p class="category">{categ}</p>
       </div>
     </div>
-    <div class="buttons">
-      <Button mode="special" type="button" on:click={navigateAndEdit}>
-        Editar
-      </Button>
-      <Button mode="light" on:click={deleteMode}>Eliminar</Button>
+    <div class="buttons-container">
     </div>
   </section>
   <section class="details">

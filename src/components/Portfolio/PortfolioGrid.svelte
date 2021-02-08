@@ -122,6 +122,23 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+    .card1 {
+      grid-column: 1 / -1;
+      padding-bottom: 1rem;
+    }
+    .card2 {
+      grid-column: 1 / -1;
+      padding-bottom: 1rem;
+    }
+
+    .card3 {
+      grid-column: 1 / -1;
+      padding-bottom: 1rem;
+    }
+    .card4 {
+      grid-column: 1 / -1;
+      padding-bottom: 1rem;
+    }
   }
 </style>
 
@@ -132,11 +149,11 @@
         <GiSoundWaves />
       </span>
       <span slot="title">
-        <h3>Consultoría en Diseño Sonoro</h3>
+        <h3>Diseño sonoro</h3>
       </span>
       <span slot="description">
-        Asesoría, planeación, gestión y desarrollo de proyectos relacionados con
-        acústica, audio profesional e integración AV
+        Desarrollamos para tí proyectos arquitectonicos y atmósferas con un equilibrio
+        acústico y profesional
       </span>
     </CategoryCard>
   </div>
@@ -146,10 +163,9 @@
       <span slot="icon">
         <GiUltrasound />
       </span>
-      <span slot="title">Acondicionamiento Acústico</span>
+      <span slot="title">Acondicionamiento acústico</span>
       <span slot="description">
-        Sistemas constructivos y materiales especializados para proveer confort
-        y comodidad sonora en cualquier espacio.
+        Disfruta del confort y la comodidad auditiva a través de intervenciones profesionales en tus espacios a precios accesibles.
       </span>
     </CategoryCard>
   </div>
@@ -161,8 +177,8 @@
       </span>
       <span slot="title">Insonorización y control</span>
       <span slot="description">
-        Control de ruido especializado para aplicaciones corporativas e
-        industriales. Proveemos tranquilidad y seguridad.
+        Libérate de las distracciones exteriores y obten la tranquilidad que buscas. Controlamos el ruido para especialmente en aplicaciones corporativas e
+        industriales. 
       </span>
     </CategoryCard>
   </div>
@@ -173,12 +189,12 @@
         <GiAudioCassette />
       </span>
       <span slot="title">
-        Audio Profesional
+        Consultoría Profesional
         <br />
       </span>
       <span slot="description">
-        Soluciones tecnológicas avanzadas para múltiples aplicaciones /
-        Instalaciones e implementación de equipos de sonido profesional.
+        ¿Necesitas apoyo en la planeación, diseño y ejecución de tus proyectos acústicos?
+        Utilizamos lo último en tecnología para llevar tu proyecto a buen termino.
       </span>
     </CategoryCard>
   </div>

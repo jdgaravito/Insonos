@@ -107,8 +107,7 @@
     .card {
       flex-direction: column;
       align-content: center;
-      min-height: 18.75rem;
-      padding: 1.25rem 0.625rem 0rem 0.625rem;
+      min-height: 12rem;
       margin-bottom: 0.625rem;
     }
 

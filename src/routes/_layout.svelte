@@ -52,7 +52,7 @@
   <slot />
 </main>
 <Footer
-  logoUrl={logoUrl2}
+  logoUrl={logoUrl}
   {city}
   {address}
   {country}

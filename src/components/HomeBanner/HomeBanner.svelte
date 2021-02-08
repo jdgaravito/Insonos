@@ -1,4 +1,5 @@
 <script>
+  import LogosCarrousel from "./LogosCarrousel.svelte";
   import Button from "../UI/Button.svelte";
   let type;
   let icon;
@@ -22,13 +23,13 @@
     <div class="banner context">
       <div class="teatro c2">
         <div class="main-image">
-          
+          <img src="/images/animacion.svg" alt="confort acustico">
         </div>
       </div>
       <div class="bannerHeader c1">
         <h1 class="Heading">
-          Creamos Experiencias Acústicas
-          <span class="bold">Asombrosas</span>
+          Diseñamos espacios y experiencias
+          <span class="bold">con sonido perfecto</span>
         </h1>
         <div class="taglineContainer">
           <h4 class="tagline">
@@ -46,8 +47,6 @@
   </div>
 </div>
 <div class="area">
-  
-
 </div>
 <style>
   .wrapper {
@@ -83,17 +82,18 @@
     font-weight: 300;
   }
   .tagline {
-    font-size: calc(0.75rem + 2 * ((100vw - 20rem) / 680));
+    font-size: 1rem;
     padding-bottom: 30px;
   }
   .main-image {
-    padding-top: 20px;
+    padding-top: 100px;
   }
+
   .area{
     background: var(--main_color);  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:30vh;
+    height:35vh;
     
    
 }
@@ -227,10 +227,11 @@
     }
 
     .main-image {
-      max-width: 31.25rem;
+      max-width: 40rem;
       min-width: 21.5rem;
       margin: 0 auto;
     }
+    
   }
 
   @media all and (max-width: 600px) {
@@ -244,7 +245,7 @@
     }
 
     .main-image {
-      width: 300px;
+      width: 350px;
       margin: 0 auto;
     }
     .teatro {
@@ -254,11 +255,6 @@
 
     .c1 {
       padding-top: 0;
-    }
-    .buttons {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
     }
   }
 </style>
