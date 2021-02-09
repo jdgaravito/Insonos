@@ -40,7 +40,8 @@
     grid-column: 1/-1;
   }
   .logoF {
-    height: 70px;
+    width: 250px;
+    height: auto;
   }
   .social {
     grid-column: 1/-1;

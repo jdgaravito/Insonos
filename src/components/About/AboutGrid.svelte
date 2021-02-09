@@ -3,7 +3,7 @@
 </script>
 
 <div class="wrapper">
-  <div class="container service1">
+  <section class="content service1">
     <div class="titlecontainer">
       <Title mode="h2-blue" bold="Experiencia " regular="y conocimiento" />
     </div>
@@ -11,14 +11,29 @@
       Tendrás a tu disposición un equipo multidisciplinario de profesionales en
       acústica, arquitectura e ingeniería de sonido para apoyar tus proyectos.
       Hemos trabajado de la mano en diferentes industrías y sectores (iglesias,
-      universidades, fábricas, hoteles y centros comerciales). 
+      universidades, fábricas, hoteles y centros comerciales).
     </p>
-    <br /><p>¿No nos crees? </p> <a href="/portafolio">Mira nuestro portafolio</a>
-  </div>
-  <div class="image serviceimg1">
-    <img src="/images/equipo.jpg" alt="Equipo Profesional" />
-  </div>
-  <div class="container service2">
+    <br />
+    <p>¿No nos crees?</p>
+    <a href="/portafolio">Mira nuestro portafolio</a>
+  </section>
+  <figure class="imagen serviceimg1">
+    <img
+      srcset="/images/about/equipo-320w.jpg 320w,
+      /images/about/equipo-480w.jpg 480w,
+    /images/about/equipo-800w.jpg 800w,
+    /images/about/equipo-1080w.jpg
+    "
+      sizes="(max-width: 320px) 280px,
+   (max-width: 1080px) 440px,
+   (max-width: 1280px) 800px,
+   1080px"
+      src="/images/about/equipo-1080w.jpg"
+      alt="equipo multidisciplinar"
+    />
+  </figure>
+
+  <section class="content service2">
     <div class="titlecontainer">
       <Title mode="h2-blue" bold="Innovación" regular="y tecnología de punta" />
     </div>
@@ -28,11 +43,24 @@
       Garantizamos alta precisión en nuestras mediciones, diseños y procesos
       constructivos.
     </p>
-  </div>
-  <div class="image serviceimg2">
-    <img src="/images/tecnologia.jpg" alt="tecnologia de medicion de ruido" />
-  </div>
-  <div class="container service3">
+  </section>
+  <figure class="imagen serviceimg2">
+    <img
+      srcset="/images/about/tecnologia-320w.jpg 320w,
+        /images/about/tecnologia-480w.jpg 480w,
+      /images/about/tecnologia-800w.jpg 800w,
+      /images/about/tecnologia-1080w.jpg
+      "
+      sizes="(max-width: 320px) 280px,
+     (max-width: 1080px) 440px,
+     (max-width: 1280px) 800px,
+     1080px"
+      src="/images/about/tecnologia-1080w.jpg"
+      alt="tecnologia de punta para medición de ruido"
+    />
+  </figure>
+
+  <section class="content service3">
     <div class="titlecontainer">
       <Title mode="h2-blue" bold="Atención " regular="Ultrapersonalizada" />
     </div>
@@ -44,48 +72,64 @@
       la reducción y eliminación de problemas como el eco, la reverberación y la
       distorsión entre otros.
     </p>
-  </div>
-  <div class="image serviceimg3">
-    <img src="/images/atencion.jpg" alt="Atencion personalizada" />
-  </div>
-  <div class="container service4">
+  </section>
+  <figure class="imagen serviceimg3">
+    <img
+      srcset="/images/about/ingeniero-320w.jpg 320w,
+        /images/about/ingeniero-480w.jpg 480w,
+      /images/about/ingeniero-800w.jpg 800w,
+      /images/about/ingeniero-1080w.jpg
+      "
+      sizes="(max-width: 320px) 280px,
+     (max-width: 1080px) 440px,
+     (max-width: 1280px) 800px,
+     1080px"
+      src="/images/about/ingeniero-1080w.jpg"
+      alt="Atencion en audio personalizada"
+    />
+  </figure>
+  <section class="content service4">
     <div class="titlecontainer">
       <Title
         mode="h2-blue"
-        bold="Materiales "
-        regular="de la más alta calidad"
+        bold="Materiales y diseños"
+        regular="con mucho estilo"
       />
     </div>
     <p>
       Ademas de ser funcionales, usamos los mejores materiales en la elaboración
       de paneles acústicos, trampas de bajos, ventanería acústica para que tu
-      espacio no solo se vea y se escuche con estilo. 
+      espacio no solo se vea genial sino que se escuche con estilo.
     </p>
-  </div>
-  <div class="image serviceimg4">
-    <img src="/images/espuma.jpg" alt="espuma aislante" />
-  </div>
+  </section>
+  <figure class="imagen serviceimg4">
+    <img
+      srcset="/images/about/materiales-320w.jpg 320w,
+        /images/about/materiales-480w.jpg 480w,
+      /images/about/materiales-800w.jpg 800w,
+      /images/about/materiales-1080w.jpg
+      "
+      sizes="(max-width: 320px) 280px,
+     (max-width: 1080px) 440px,
+     (max-width: 1280px) 800px,
+     1080px"
+      src="/images/about/materiales-1080w.jpg"
+      alt="Diseños acústicos con materiales de alta calidad"
+    />
+  </figure>
 </div>
 
 <style>
   .wrapper {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-
-  .image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  .container {
+  .content {
     padding: 4.5rem 6.25rem 1rem 6.25rem;
   }
   .titlecontainer {
     padding-bottom: 2.5rem;
-    width: 350px;
+    width: 400px;
   }
   p {
     font-weight: 300;
@@ -94,27 +138,37 @@
   a {
     text-decoration: none;
     font-weight: 700;
+    color: var(--main-color);
   }
-  @media all and (max-width: 1280px) {
-    p {
-      font-size: 0.875rem;
-    }
+  figure > img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: 1080px;
   }
-  @media all and (max-width: 1149px) {
+
+  @media all and (max-width: 1080px) {
     .wrapper {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
     }
-
-    .container {
-      padding-bottom: 4rem;
+    .content {
+      padding: 4.5rem 6.25rem 4rem 6.25rem;
     }
   }
-  @media all and (max-width: 570px) {
-    .container {
-      padding-right: 10px;
-      padding-left: 10px;
+  @media all and (max-width: 600px) {
+    .content {
+      padding: 2rem 2rem 4rem 2rem;
     }
+  }
+
+  @media all and (max-width: 600px){
+    .titlecontainer {
+    padding-bottom: 2.5rem;
+    width: auto;
+  }
+   figure > img {
+    width: 100%;
+   }
   }
 
   @media all and (min-width: 1150px) {

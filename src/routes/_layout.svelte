@@ -1,11 +1,13 @@
 <script>
   import TopNav from "../components/TopNav.svelte";
   import Footer from "../components/Footer.svelte";
+  import MobileNav from "../components/MobileNav.svelte";
   import Nav from "../components/Nav.svelte";
   import LoadingBar from "../components/UI/LoadingBar.svelte";
   export let wpNumber = "+57 320 453 4334";
   export let instagram = "https://www.instagram.com/";
   export let youtube = "https://www.youtube.com/";
+  let open = false;
   export let segment;
   export let logoUrl = "logo.svg";
   let logoUrl2 = "logo-small.svg";
@@ -45,23 +47,23 @@
 <header class={headerClass}>
   <LoadingBar />
   <TopNav {wpNumber} {instagram} {youtube} />
-  <Nav {logoUrl} {segment} />
+  <Nav {logoUrl} {segment} bind:sidebar={open} />
 </header>
-
 <main class="wrapper">
   <slot />
 </main>
 <Footer
-  logoUrl={logoUrl}
-  {city}
-  {address}
-  {country}
-  {phone1}
-  {email1}
-  {instagram}
-  {youtube}
-  {wpNumber}
+logoUrl={logoUrl}
+{city}
+{address}
+{country}
+{phone1}
+{email1}
+{instagram}
+{youtube}
+{wpNumber}
 />
+<MobileNav {segment} bind:open/>
 
 <style>
   :root {

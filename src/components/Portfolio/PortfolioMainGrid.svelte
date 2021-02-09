@@ -11,6 +11,18 @@
     grid-gap: 1rem;
     grid-auto-flow: row dense;
   }
+
+  @media all and (max-width: 1080px) {
+    .grid-gallery{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .grid-gallery{
+      grid-template-columns: 1fr;
+    }
+  }
+
 </style>
 
 <div class="wrapper">

@@ -2,8 +2,12 @@
 	export let logoUrl;
 	export let innerWidth = 0;
 	export let segment;
-	import FaBars from 'svelte-icons/fa/FaBars.svelte';
-	import Navlist from "./Navlist.svelte"
+	export let sidebar = false;
+	let open = false;
+
+	import Navlist from "./Navlist.svelte";
+	import MobileNav from './MobileNav.svelte';
+	import Hamburger from './UI/Hamburguer.svelte';
   </script>
   
   <style>
@@ -23,14 +27,6 @@
 	.navbar{
 	  padding-right: 20px;
 	}
-	.hamburguer{
-		color: #ffffff;
-		height: 40px;
-		width: 40px;
-	}
-	.hamburguer:hover {
-		opacity: 80%;
-	}
 	#logo{
 		width: 150px;
 	}
@@ -48,8 +44,8 @@
 		{#if innerWidth > 1200}
 		  <Navlist {segment}/>
 		{:else}
-		  <div class="hamburguer"><FaBars /></div>
-		{/if}
+		  <Hamburger bind:open={sidebar}/>
+		  {/if}
 		
 	  </nav>
 	</div>

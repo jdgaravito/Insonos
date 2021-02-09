@@ -10,11 +10,6 @@
 
 <div class="wrapper">
   <div class="imagecontainer">
-    <img
-      class="paneles"
-      src="/images/components/contacto.jpg"
-      alt="Paneles Acústicos LEQ"
-    />
   </div>
   <div class="contact-container">
     <section class="contact-section">
@@ -26,7 +21,7 @@
           <Title
             mode="h2-dark"
             bold="¿Cómo podemos"
-            regular="ayudar a su empresa?"
+            regular="ayudar a tu empresa?"
           />
         </div>
       </div>
@@ -43,6 +38,7 @@
   }
   .imagecontainer {
     background: var(--main_gradient);
+    height:15rem;
   }
   .contact-section {
     height: 100%;

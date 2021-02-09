@@ -61,6 +61,7 @@
   background: var(--purple_gradient);
   height: 100%;
   transform: translate3d(-100%, 0, 0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   perspective: 1000;
 }

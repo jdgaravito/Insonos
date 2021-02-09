@@ -13,9 +13,9 @@
       </div>
       <div class="text">
         <p class="description">
-          Contacte a nuestro equipo de profesionales y reciba atención
-          personalizada a su requerimiento en proyectos de diseño acústico,
-          insonorización, estudios de ruido y consultoría.
+          Contacta con nuestro equipo de profesionales y recibe atención
+          personalizada con tus necesidades en proyectos de diseño acústico,
+          insonorización, estudios de ruido y tratamientos acuísticos.
         </p>
       </div>
     </div>
@@ -27,7 +27,7 @@
               <MdPlace />
             </span>
             <span slot="content">
-              <p>Calle 137B # 57A – 60</p>
+              <p>Castillos de Puente Largo</p>
               <br />
               <p>Bogotá - Colombia</p>
             </span>

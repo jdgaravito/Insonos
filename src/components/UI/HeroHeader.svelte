@@ -27,6 +27,12 @@
     max-width: 30rem;
     padding-bottom: 5rem;
   }
+  @media all and (max-width: 450px){
+    .tagline{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
 </style>
 
 <div class="wrapper">
