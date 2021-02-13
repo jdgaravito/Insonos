@@ -1,12 +1,9 @@
 <script>
-  export let mode;
+ 
 </script>
 
 <style>
-  .light {
-    color: #ffffff;
-    text-decoration: none;
-  }
+  
 
   .iconfeature {
     display: flex;
@@ -17,6 +14,7 @@
     height: 1.875rem;
   }
   .content {
+    padding-top: 0.6rem;
     line-height: 0.625rem;
     text-decoration: none;
     padding-left: 1.5625rem;
@@ -25,7 +23,7 @@
   }
 </style>
 
-<div class="iconfeature {mode}">
+<div class="iconfeature">
   <div class="icon">
     <slot name="icon">
       <p>Missing icon</p>
@@ -34,4 +32,5 @@
   <div class="content">
     <slot name="content">Missing content</slot>
   </div>
+  {#if false}<slot></slot>{/if}
 </div>

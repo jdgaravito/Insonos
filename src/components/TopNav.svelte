@@ -2,6 +2,7 @@
   export let wpNumber;
   export let instagram;
   export let youtube;
+  export let phoneNumber1;
   import FaWhatsapp from "svelte-icons/fa/FaWhatsapp.svelte";
   import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
   import FaYoutube from "svelte-icons/fa/FaYoutube.svelte";
@@ -75,7 +76,7 @@
         <div class="icon wp">
           <FaWhatsapp />
         </div>
-        <a id="wpnumber" href="https://wa.me/{wpNumber}">{wpNumber}</a>
+        <a id="wpnumber" href="https://wa.me/{wpNumber}">{phoneNumber1}</a>
       </div>
       <div class="social">
         <a href={instagram}>

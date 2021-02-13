@@ -33,8 +33,8 @@
         </h1>
         <div class="taglineContainer">
           <h4 class="tagline">
-            Acústica Arquitectónica, Control de Ruido, Diseño Acústico,
-            Consultoría y Soluciones de Audio Profesional
+            Acústica profesional para tus proyectos. Somos especialistas en el control del ruido, insonorización
+            acondicionamiento acústico y el diseño arquitecnonico basado en el sonido.
           </h4>
         </div>
         <div class="buttons">
@@ -90,8 +90,8 @@
   }
 
   .area{
-    background: var(--main_color);  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background: var(--main_color);  
     width: 100%;
     height:35vh;
     

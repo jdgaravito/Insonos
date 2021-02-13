@@ -46,16 +46,16 @@
   </section>
   <figure class="imagen serviceimg2">
     <img
-      srcset="/images/about/tecnologia-320w.jpg 320w,
-        /images/about/tecnologia-480w.jpg 480w,
-      /images/about/tecnologia-800w.jpg 800w,
-      /images/about/tecnologia-1080w.jpg
+      srcset="/images/about/depunta-320w.jpg 320w,
+        /images/about/depunta-480w.jpg 480w,
+      /images/about/depunta-800w.jpg 800w,
+      /images/about/depunta-1080w.jpg
       "
       sizes="(max-width: 320px) 280px,
      (max-width: 1080px) 440px,
      (max-width: 1280px) 800px,
      1080px"
-      src="/images/about/tecnologia-1080w.jpg"
+      src="/images/about/depunta-1080w.jpg"
       alt="tecnologia de punta para medición de ruido"
     />
   </figure>

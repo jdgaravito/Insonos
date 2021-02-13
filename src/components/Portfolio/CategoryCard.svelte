@@ -2,7 +2,6 @@
   let hovering;
   let category;
   let mode;
-
   function enter() {
     hovering = true;
   }
@@ -136,5 +135,5 @@
     </div>
 
   </div>
-
+  {#if false}<slot></slot>{/if}
 </div>

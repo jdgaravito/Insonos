@@ -26,7 +26,7 @@
     <a class:selected={segment === "productos"} href="productos">Productos</a>
   </li>
   <li>
-    <a class:selected={segment === "contacto"} href="contacto">Contacto</a>
+    <a rel="prefetch" class:selected={segment === "contacto"} href="contacto">Contacto</a>
   </li>
 </ul>
 

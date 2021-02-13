@@ -2,7 +2,6 @@
   import PortfolioItem from "./PortfolioItem.svelte";
   import CategoryCard from "./CategoryCard.svelte";
   import PortfolioThumb from "./PortfolioThumb.svelte";
-  import FaWater from "svelte-icons/fa/FaWater.svelte";
   import GiSoundWaves from "svelte-icons/gi/GiSoundWaves.svelte";
   import GiUltrasound from "svelte-icons/gi/GiUltrasound.svelte";
   import GiAudioCassette from "svelte-icons/gi/GiAudioCassette.svelte";
@@ -10,25 +9,25 @@
 
   export let projects;
 
-  //filter the projects array depending the category
-  const acond = projects.filter(project => project.category === "acond");
-  const aisla = projects.filter(project => project.category === "aisla");
-  const consult = projects.filter(project => project.category === "consult");
-  const audio = projects.filter(project => project.category === "audio");
+  // //filter the projects array depending the category
+  // const acond = projects.filter(project => project.category === "acond");
+  // const aisla = projects.filter(project => project.category === "aisla");
+  // const consult = projects.filter(project => project.category === "consult");
+  // const audio = projects.filter(project => project.category === "audio");
 
-  let category = "acond";
+  // let category = "acond";
 
-  function changeCategory(categ) {
-    if (categ == "acond") {
-      category = acond;
-    } else if (categ == "aisla") {
-      category = aisla;
-    } else if (categ == "consult") {
-      category = consult;
-    } else if (categ == "audio") {
-      category = audio;
-    }
-  }
+  // function changeCategory(categ) {
+  //   if (categ == "acond") {
+  //     category = acond;
+  //   } else if (categ == "aisla") {
+  //     category = aisla;
+  //   } else if (categ == "consult") {
+  //     category = consult;
+  //   } else if (categ == "audio") {
+  //     category = audio;
+  //   }
+  // }
 
   // gives the last 4 elements on filtered array.
   let projs = projects.slice(Math.max(projects.length - 4, 0));
@@ -177,8 +176,7 @@
       </span>
       <span slot="title">Insonorización y control</span>
       <span slot="description">
-        Libérate de las distracciones exteriores y obten la tranquilidad que buscas. Controlamos el ruido para especialmente en aplicaciones corporativas e
-        industriales. 
+        Libérate de las distracciones exteriores y obten la tranquilidad que buscas. Controlamos el ruido en tu espacio. 
       </span>
     </CategoryCard>
   </div>
@@ -193,8 +191,7 @@
         <br />
       </span>
       <span slot="description">
-        ¿Necesitas apoyo en la planeación, diseño y ejecución de tus proyectos acústicos?
-        Utilizamos lo último en tecnología para llevar tu proyecto a buen termino.
+        ¿Necesitas apoyo en la planeación, diseño y ejecución de tus proyectos acústicos? Estamos para apoyarte.
       </span>
     </CategoryCard>
   </div>

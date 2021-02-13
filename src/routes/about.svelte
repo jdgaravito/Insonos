@@ -4,7 +4,7 @@
 	let bold = "¿Que nos hace";
 	let regular = "únicos?";
 	let tagline =
-		"INSONOS es una firma de diseño que se especializa en el desarrollo de proyectos de acústica arquitectónica y audio profesional en Colombia y américa latina.";
+		"INSONOS es una firma de diseño que se especializa en el desarrollo de proyectos de acústica arquitectónica y tratamiento sonoro en Colombia y américa latina.";
 </script>
 
 <svelte:head>

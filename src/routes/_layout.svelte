@@ -1,10 +1,13 @@
 <script>
+  //imports
   import TopNav from "../components/TopNav.svelte";
   import Footer from "../components/Footer.svelte";
   import MobileNav from "../components/MobileNav.svelte";
   import Nav from "../components/Nav.svelte";
   import LoadingBar from "../components/UI/LoadingBar.svelte";
-  export let wpNumber = "+57 320 453 4334";
+  import Whatsapp from "../components/Whastapp.svelte";
+  //exports
+  export let wpNumber = "73204534334";
   export let instagram = "https://www.instagram.com/";
   export let youtube = "https://www.youtube.com/";
   let open = false;
@@ -46,24 +49,26 @@
 
 <header class={headerClass}>
   <LoadingBar />
-  <TopNav {wpNumber} {instagram} {youtube} />
+  <TopNav {wpNumber} {instagram} {youtube} phoneNumber1={phone1} />
   <Nav {logoUrl} {segment} bind:sidebar={open} />
 </header>
 <main class="wrapper">
   <slot />
+  <Whatsapp />
 </main>
+
 <Footer
-logoUrl={logoUrl}
-{city}
-{address}
-{country}
-{phone1}
-{email1}
-{instagram}
-{youtube}
-{wpNumber}
+  {logoUrl}
+  {city}
+  {address}
+  {country}
+  {phone1}
+  {email1}
+  {instagram}
+  {youtube}
+  {wpNumber}
 />
-<MobileNav {segment} bind:open/>
+<MobileNav {segment} bind:open />
 
 <style>
   :root {

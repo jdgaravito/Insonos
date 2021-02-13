@@ -1,44 +1,42 @@
 <script>
   import ContactCard from "../components/Contact/ContactCard.svelte";
-  import ContactForm from "../components/Contact/ContactForm.svelte";
+  import Meta from '../components/Meta.svelte';
   import Title from "../components/UI/Title.svelte";
+
+  const metadata = {
+		description: 'Acústica arquitectónica, control de ruido, insonorización, aislamiento acústico,  ',
+		image: 'https://svelte.dev/images/twitter-card.png',
+		imageAlt: 'Insonos acústica arqutectónica, control de ruido, insonorización, aislamiento acústico',
+		url:'insonos.co'
+	}
+
+
 </script>
 
 <svelte:head>
-  <title>Contacto</title>
+  <Meta {metadata}/>
+  <title>Contáctanos</title>
 </svelte:head>
 
 <div class="wrapper">
-  <div class="imagecontainer">
-  </div>
   <div class="contact-container">
     <section class="contact-section">
       <ContactCard />
     </section>
     <section class="contact-form">
-      <div class="title-container">
-        <div class="form-title">
-          <Title
-            mode="h2-dark"
-            bold="¿Cómo podemos"
-            regular="ayudar a tu empresa?"
-          />
-        </div>
-      </div>
-      <div class="formContainer">
-        <ContactForm />
-      </div>
+        <iframe class="frame1" scrolling="no"
+            title="contacto"
+            src="https://us7.list-manage.com/contact-form?u=5567743dda6293ffc143d732e&form_id=14202a7b9c5706dfe7d4797f029276c3"
+            frameborder="0"
+        />
     </section>
+    
   </div>
 </div>
 
 <style>
   .wrapper {
     margin-top: -6.25rem;
-  }
-  .imagecontainer {
-    background: var(--main_gradient);
-    height:15rem;
   }
   .contact-section {
     height: 100%;
@@ -55,24 +53,33 @@
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
   }
-  .title-container {
-    display: flex;
+  
+  .contact-form{
+      width: 100%;
+      height: 100%;
+      margin: 0 0 0 0;
+      padding: 1rem 0 0 0;
+      overflow: hidden;
   }
-  .form-title {
-    padding-top: 4.375rem;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 350px;
+
+  .contact-form iframe{
+        width: 100%;
+        height: 900px;
   }
   @media all and (max-width: 1080px) {
-    .imagecontainer {
-      background: var(--main_color);
-    }
+    
     .wrapper {
       margin-top: 0;
     }
     .contact-container {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media all and (min-width:1080px){
+    .contact-section{
+      padding-top: 5rem;
+      height: auto;
     }
   }
 </style>

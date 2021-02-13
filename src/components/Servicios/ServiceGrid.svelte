@@ -8,12 +8,12 @@
       <Title mode="h2-blue" bold="Medición de " regular="Ruido" />
     </div>
     <p>
-      Realizamos mediciones in situ para determinar los niveles de ruido de
-      fuentes fijas, y su afectación en zonas residenciales e actividades
-      industriales. Contamos con equipamiento y herramientas de medición
-      certificadas para el análisis de ruido en diversas condiciones. Utilizamos
-      Software para el modelado y cálculo de parámetros de ruido para determinar
-      si su proyecto cumple con la normatividad nacional e internacional.
+      ¿Necesitas cumplir la legislación ambiental y conocer cual es el nivel de
+      ruido de tu industria, fabrica, o local comercial y saber como afecta las
+      zonas residenciales aledañas o a la salud de tus colaboradores? Utilizamos
+      la última tecnología para medir, analizar y certificar el nivel de ruido
+      en diferentes condiciones. Obtendrás un informe detallado y te
+      propondremos alternativas accesibles para mitigarlo.
     </p>
   </section>
   <figure class="imagen serviceimg1">
@@ -39,12 +39,13 @@
       <Title mode="h2-blue" bold="Consultoría y" regular="Diseño" />
     </div>
     <p>
-      Brindamos asesoría en planeación, diseño y ejecución de proyectos
-      arquitectónicos residenciales, industriales y corporativos que sean
-      impactados por elementos de audio. Nos apoyamos en software de diseño y
-      predicción acústica de última tecnología; lo cual nos permite desarrollar
-      todos los proyectos de nuestros clientes con el más alto nivel de
-      precisión.
+      ¿Necesitas ayuda en el diseño acústico y sonoro de tu proyecto? Te
+      asesoramos muy de cerca en la planeación, diseño y ejecución los elementos
+      acústicos de proyectos arquitectónicos e industriales. Comenzamos con la
+      evaluación de tus necesidades específicas para luego predecir
+      acústicamente la respuesta del espacio. Elaboramos el diseño de los planos
+      técnicos, los materiales y componentes necesarios para que obtengas el
+      resultado soñado.
     </p>
   </section>
   <figure class="imagen serviceimg2">
@@ -72,13 +73,11 @@
       />
     </div>
     <p>
-      La tranquilidad, el silencio y el confort acústico son muy importantes en
-      cualquier recinto. Determinar y analizar las fuentes de ruido externas (o
-      internas) permite diseñar una solución apropiada y personalizada a
-      cualquier problemática de ruido. El aislamiento acústico o insonorización
-      comprende técnicas y sistemas constructivos especializados para la
-      reducción del ruido, como ventanería adecuada, materiales aislantes.
-      Realizamos para usted la ejecucíon de obras insonorizadas.
+      ¿Tienes problemas con el ruido interior o exterior? Podemos aislar tu
+      espacio mediante diferentes técnicas arquitectónicas y constructivas para
+      controlar el nivel de ruido manteniendo la estética y calidad del hábitat.
+      Utilizamos los mejores materiales aislantes, incluso en ventanería o
+      puertas. Garantizamos un resultado perfecto.
     </p>
   </section>
   <figure class="imagen serviceimg3">
@@ -101,12 +100,12 @@
       <Title mode="h2-blue" bold="Acondicionamiento " regular="Acústico" />
     </div>
     <p>
-      Mediante software de diseño, dimensionamos y calculamos los componentes
-      acústicos necesarios para lograr un óptimo comportamiento sonoro en una
-      sala (paneles acústicos, trampas de bajos, acabados de materiales, metraje
-      de absorción, etc.) Logramos la reducción y eliminación de problemas como
-      eco, reverberación y distorsión para proveerle a sus audiencias la mejor
-      experiencia acústica posible.
+      ¿Deseas que tu espacio suene mucho mejor? ¿Tienes problemas de eco,
+      reverberación o sonido distorsionado? Mediante software especializado e
+      ingeniería logramos obtener el mejor diseño y los elementos necesarios
+      (paneles acústicos, trampas de bajos, acabados de materiales, metraje de
+      absorción) para potenciar las propiedades acústicas de tu espacio o
+      habitación. Juntos podemos llevarlo al siguiente nivel.
     </p>
   </section>
   <figure class="imagen serviceimg4">
@@ -163,14 +162,14 @@
       padding: 2rem 2rem 4rem 2rem;
     }
   }
-  @media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     .titlecontainer {
-    padding-bottom: 2.5rem;
-    width: auto;
-  }
-   figure > img {
-    width: 100%;
-   }
+      padding-bottom: 2.5rem;
+      width: auto;
+    }
+    figure > img {
+      width: 100%;
+    }
   }
   @media all and (min-width: 1150px) {
     .service1 {
