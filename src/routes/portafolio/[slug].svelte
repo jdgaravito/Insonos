@@ -17,16 +17,16 @@
   import Title from "../../components/UI/Title.svelte";
   import Button from "../../components/UI/Button.svelte";
   import { projectId } from "./_projectsStore";
-  import proyectos from "./_projectsStore";
+
   export let project;
   export let categ;
 
   /*manejod e la store. esta funcion guarda el Id en 
   la variable projectIndex, no confundir con la misma del store */
-  
+
   let projectIndex;
-  projectId.subscribe(p => {
-    projectIndex = p; 
+  projectId.subscribe((p) => {
+    projectIndex = p;
   });
 
   // presentacion de categorias dependiendo del category id;
@@ -34,33 +34,80 @@
     categ = "Aislamiento Acústico";
   } else if (project.category == "acond") {
     categ = "Acondicionamiento Acústico";
+  } else if (project.category == "design") {
+    categ = "Diseño y consultoría";
   } else {
     categ = "Sin categoría";
   }
-
-// funcion para enviar el ID e ir a pagina de editar
-  const navigateAndEdit = async () => {
-    projectId.update(id => id = project.id);
-    await goto("/portafolio/editar-proyecto");
-    
-  };
-// funcion para eliminar el proyecto
-
-  const deleteMode = async () => {
-    proyectos.deleteProject(project.id);
-    await goto("/portafolio");
-  } 
 </script>
 
+<svelte:head>
+  <title>{project.name}</title>
+</svelte:head>
+
+<div class="wrapper">
+  <section class="heroimage" style="--image: url({project.mainImage});">
+    <div class="titlecontainer">
+      <div class="title">
+        <Title mode="h1-light" bold={project.name} regular="" />
+        <p class="category">{categ}</p>
+      </div>
+    </div>
+    <div class="buttons-container" />
+  </section>
+  <section class="details">
+    <div class="client">
+      <span>Cliente:</span>
+      {project.client}
+    </div>
+    <div class="city">{project.city}, {project.country}</div>
+    <div class="date">{project.date}</div>
+  </section>
+  <section class="main">
+    <div class="titledesc inner">
+      <Title mode="h2-dark" bold={project.tagline} regular="" />
+    </div>
+    <div class="description inner">
+      <p>{project.description}</p>
+    </div>
+  </section>
+  <section class="galery">
+    <div class="imgcontainer">
+      <img class="projectimage" src={project.imgUrl1} alt="{project.title}1" />
+    </div>
+    <div class="imgcontainer">
+      <img class="projectimage" src={project.imgUrl2} alt="{project.title}2" />
+    </div>
+    <div class="imgcontainer">
+      <img class="projectimage" src={project.imgUrl3} alt="{project.title}3" />
+    </div>
+    <div class="imgcontainer">
+      <img class="projectimage" src={project.imgUrl4} alt="{project.title}4" />
+    </div>
+    <div class="specs">
+      <div class="titlecont">
+        <Title mode="h2-light" bold="Especificaciones" regular="" />
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature feat1">
+        <h3>{project.attribute1Name}</h3>
+        <p>{project.attribute1}</p>
+      </div>
+      <div class="feature feat2">
+        <h3>{project.attribute2Name}</h3>
+        <p>{project.attribute2}</p>
+      </div>
+      <div class="feature feat3">
+        <h3>{project.attribute3Name}</h3>
+        <p>{project.attribute3}</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- <div class="content" /> -->
 <style>
-  /*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
   .wrapper {
     background: var(--main_gradient);
     margin-top: -18.75rem;
@@ -141,12 +188,18 @@
   .imgcontainer {
     margin: 0 auto;
   }
-  .imgcontainer > img {
-    max-width: 100%;
-    height: auto;
+
+  .projectimage {
+    display: block;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .imgcontainer > img {
     display: block;
     object-fit: cover;
-  }
+  } */
 
   .specs {
     color: #ffffff;
@@ -207,72 +260,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>{project.name}</title>
-</svelte:head>
-
-<div class="wrapper">
-  <section class="heroimage" style="--image: url({project.mainImage});">
-    <div class="titlecontainer">
-      <div class="title">
-        <Title mode="h1-light" bold={project.name} regular="" />
-        <p class="category">{categ}</p>
-      </div>
-    </div>
-    <div class="buttons-container">
-    </div>
-  </section>
-  <section class="details">
-    <div class="client">
-      <span>Cliente:</span>
-      {project.client}
-    </div>
-    <div class="city">{project.city}, {project.country}</div>
-    <div class="date">{project.date}</div>
-  </section>
-  <section class="main">
-    <div class="titledesc inner">
-      <Title mode="h2-dark" bold={project.tagline} regular="" />
-    </div>
-    <div class="description inner">
-      <p>{project.description}</p>
-    </div>
-  </section>
-  <section class="galery">
-    <div class="imgcontainer">
-      <img src={project.imgUrl1} alt="{project.title}1" />
-    </div>
-    <div class="imgcontainer">
-      <img src={project.imgUrl2} alt="{project.title}2" />
-    </div>
-    <div class="imgcontainer">
-      <img src={project.imgUrl3} alt="{project.title}3" />
-    </div>
-    <div class="imgcontainer">
-      <img src={project.imgUrl4} alt="{project.title}4" />
-    </div>
-    <div class="specs">
-      <div class="titlecont">
-        <Title mode="h2-light" bold="Especificaciones" regular="" />
-      </div>
-    </div>
-    <div class="features">
-      <div class="feature feat1">
-        <h3>{project.attribute1Name}</h3>
-        <p>{project.attribute1}</p>
-      </div>
-      <div class="feature feat2">
-        <h3>{project.attribute2Name}</h3>
-        <p>{project.attribute2}</p>
-      </div>
-      <div class="feature feat3">
-        <h3>{project.attribute3Name}</h3>
-        <p>{project.attribute3}</p>
-      </div>
-    </div>
-
-  </section>
-</div>
-
-<!-- <div class="content" /> -->

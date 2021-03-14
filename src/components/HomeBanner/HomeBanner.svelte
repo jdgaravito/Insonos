@@ -1,5 +1,4 @@
 <script>
-  import LogosCarrousel from "./LogosCarrousel.svelte";
   import Button from "../UI/Button.svelte";
   let type;
   let icon;
@@ -256,5 +255,16 @@
     .c1 {
       padding-top: 0;
     }
+
+    .area {
+      height: 50vh;
+    }
+
+    .circles li:nth-child(1){
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
   }
 </style>

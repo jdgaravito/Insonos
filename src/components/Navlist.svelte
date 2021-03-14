@@ -1,6 +1,5 @@
 <script>
   export let segment = undefined;
-  //   export let navClass;
 </script>
 
 <ul class="navlist">
@@ -26,7 +25,7 @@
     <a class:selected={segment === "productos"} href="productos">Productos</a>
   </li>
   <li>
-    <a rel="prefetch" class:selected={segment === "contacto"} href="contacto">Contacto</a>
+    <a class:selected={segment === "contacto"} href="contacto">Contacto</a>
   </li>
 </ul>
 

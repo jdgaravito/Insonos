@@ -26,7 +26,7 @@
 </svelte:head>
 
 <HomeBanner />
-<LogosCarrousel />
+<!-- <LogosCarrousel /> -->
 <HomePortfolio />
 
 

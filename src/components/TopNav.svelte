@@ -1,5 +1,4 @@
 <script>
-  export let wpNumber;
   export let instagram;
   export let youtube;
   export let phoneNumber1;
@@ -76,7 +75,7 @@
         <div class="icon wp">
           <FaWhatsapp />
         </div>
-        <a id="wpnumber" href="https://wa.me/{wpNumber}">{phoneNumber1}</a>
+        <a id="wpnumber" href="https://api.whatsapp.com/send?phone=73204534334&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Insonos%20.">{phoneNumber1}</a>
       </div>
       <div class="social">
         <a href={instagram}>

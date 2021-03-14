@@ -7,7 +7,6 @@
   import LoadingBar from "../components/UI/LoadingBar.svelte";
   import Whatsapp from "../components/Whastapp.svelte";
   //exports
-  export let wpNumber = "73204534334";
   export let instagram = "https://www.instagram.com/";
   export let youtube = "https://www.youtube.com/";
   let open = false;
@@ -49,7 +48,7 @@
 
 <header class={headerClass}>
   <LoadingBar />
-  <TopNav {wpNumber} {instagram} {youtube} phoneNumber1={phone1} />
+  <TopNav  {instagram} {youtube} phoneNumber1={phone1} />
   <Nav {logoUrl} {segment} bind:sidebar={open} />
 </header>
 <main class="wrapper">
@@ -66,7 +65,7 @@
   {email1}
   {instagram}
   {youtube}
-  {wpNumber}
+  {segment}
 />
 <MobileNav {segment} bind:open />
 
