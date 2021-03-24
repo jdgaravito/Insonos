@@ -19,6 +19,10 @@
     overflow: hidden;
     border-radius: 0.625rem;
   }
+  .project-name{
+    padding: 2px;
+    padding-right: 10px;
+  }
   .imagecontainer {
     position: relative;
     color: #ffffff;
@@ -41,6 +45,7 @@
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
     filter: brightness(100%);
+    padding: 2px;
   }
 
   .imagecontainer:hover:before {
