@@ -27,7 +27,7 @@
               <MdPlace />
             </span>
             <span slot="content">
-              <p>Castillos de Puente Largo</p>
+              <p>Calle 106 A # 54 - 65</p>
               <br />
               <p>Bogotá - Colombia</p>
             </span>

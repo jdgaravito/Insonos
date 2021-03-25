@@ -38,7 +38,7 @@
         </div>
         <div class="buttons">
           <div class="mainButton">
-            <Button type="button" mode="special">Contactar</Button>
+            <Button href="/contacto" type="button" mode="special">Contactar</Button>
           </div>
         </div>
       </div>

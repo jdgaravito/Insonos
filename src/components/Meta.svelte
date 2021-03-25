@@ -16,10 +16,10 @@
     {/if} 
     
     {#if metadata.image}
-      <meta property="og:image" content="example.com/path_to/thumbnail.jpg" />
+      <meta property="og:image" content="/thumbnail.jpg" />
       <meta
         property="twitter:image"
-        content="https://example.com/path-to/thumbnail.jpg"
+        content="/thumbnail.jpg"
       />
     {/if} 
     

@@ -2,7 +2,8 @@
   import Navlist from "./Navlist.svelte";
   import FaWhatsapp from "svelte-icons/fa/FaWhatsapp.svelte";
   import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
-  import FaYoutube from "svelte-icons/fa/FaYoutube.svelte";
+  import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
+  import FaFacebookSquare from 'svelte-icons/fa/FaFacebookSquare.svelte';
   import MdPlace from "svelte-icons/md/MdPlace.svelte";
   import MdSmartphone from "svelte-icons/md/MdSmartphone.svelte";
   import FaRegEnvelope from "svelte-icons/fa/FaRegEnvelope.svelte";
@@ -13,8 +14,6 @@
   export let city;
   export let phone1;
   export let email1;
-  export let instagram;
-  export let youtube;
 </script>
 
 <div class="footerWrapper wrapper">
@@ -47,11 +46,14 @@
     </div>
 
     <div class="social">
-      <div class="icon yt">
-        <a href={youtube}><FaYoutube /></a>
+      <div class="icon">
+        <a href="https://www.linkedin.com/company/insonos"><FaLinkedin /></a>
       </div>
       <div class="icon">
-        <a href={instagram}><FaInstagram /></a>
+        <a href="https://www.instagram.com/insonos_co/"><FaInstagram /></a>
+      </div>
+      <div class="icon">
+        <a href="https://www.facebook.com/insonos/"><FaFacebookSquare/></a>
       </div>
       <div class="icon">
         <a href="https://api.whatsapp.com/send?phone=73204534334&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Insonos%20."><FaWhatsapp /></a>
@@ -92,14 +94,17 @@
     align-items: center;
     padding: 20px 0 20px 0;
   }
+
   .icon {
     width: 30px;
     height: 30px;
     padding-right: 5px;
   }
-  .yt {
-    width: 35px;
-    height: 35px;
+ 
+  .icon:hover {
+    opacity: 70%;
+    transform: translateY(2px);
+    transition: transform 0.2s ease-in-out; ;
   }
   .address-section {
     padding-top: 10px;

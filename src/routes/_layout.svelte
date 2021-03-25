@@ -15,7 +15,7 @@
   let logoUrl2 = "logo-small.svg";
   let city = "Bogotá";
   let country = "Colombia";
-  let address = "Calle 137B # 57A – 60";
+  let address = "Calle 106 A # 54 - 65";
   let phone1 = "+57 320 453 4334";
   let email1 = "info@insonos.co";
 
